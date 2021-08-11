@@ -18,7 +18,9 @@
   "homepage": "https://github.com/Leonie-Bouchat/Netflax-backend#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "msnodesqlv8": "^2.2.0",
+    "mssql": "^7.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
