@@ -1,11 +1,14 @@
-const filmsRoutes = require('./films');
+const moviesRoutes = require('./movies');
+const actorsRoutes = require('./actors')
 
-const appRouter = (app, fs) => {
-    app.get('/test', (req, res) => {
-        res.send("Bienvenue dans l'api")
+const appRouter = (app) => {
+    app.get('/', (req, res) => {
+        res.send("Bienvenue dans l'api !!")
     });
 
-    filmsRoutes(app, fs);
+    moviesRoutes(app);
+    actorsRoutes(app)
+    
 };
 
 module.exports = appRouter;
